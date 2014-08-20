@@ -1,0 +1,13 @@
+{
+    "name": "jquery-i18n-properties",
+    "version": "1.1.0",
+    "description": "lightweight jQuery plugin for providing internationalization to javascript from ‘.properties’ files",
+    "ignore": [
+        "*",
+        "!dist",
+        "!bower.json"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.1"
+    }
+}
