@@ -4,7 +4,7 @@ import httplib, urllib, sys
 
 # Define the parameters for the POST request and encode them in
 # a URL-safe format.
-f = open('jquery.i18n.properties.js', 'r')
+f = open('src/jquery.i18n.properties.js', 'r')
 
 params = urllib.urlencode([
     #('js_code', sys.argv[1]),
