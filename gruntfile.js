@@ -5,6 +5,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        clean: {
+            dist: {
+                src: 'dist/*.*'
+            }
+        },
+
         copy: {
             dist: {
                 files: {
@@ -22,6 +28,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', ['copy:dist', 'uglify:dist']);
+    grunt.registerTask('default', ['clean:dist', 'copy:dist', 'uglify:dist']);
 
 };
