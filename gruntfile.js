@@ -14,7 +14,8 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 files: {
-                    'dist/<%= pkg.name %>.<%= pkg.version %>.js': 'src/<%= pkg.name %>.js'
+                    'dist/<%= pkg.name %>.<%= pkg.version %>.js': 'src/<%= pkg.name %>.js',
+                    'dist/<%= pkg.name %>.<%= pkg.version %>.d.ts': 'src/<%= pkg.name %>.d.ts'
                 }
             }
         },
